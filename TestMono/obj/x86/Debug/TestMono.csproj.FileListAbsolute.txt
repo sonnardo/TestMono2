@@ -1,0 +1,6 @@
+/home/sonnardo/Projects/TestMono/TestMono/bin/Debug/TestMono.exe
+/home/sonnardo/Projects/TestMono/TestMono/bin/Debug/TestMono.pdb
+/home/sonnardo/Projects/TestMono/TestMono/obj/x86/Debug/TestMono.csprojAssemblyReference.cache
+/home/sonnardo/Projects/TestMono/TestMono/obj/x86/Debug/TestMono.csproj.CoreCompileInputs.cache
+/home/sonnardo/Projects/TestMono/TestMono/obj/x86/Debug/TestMono.exe
+/home/sonnardo/Projects/TestMono/TestMono/obj/x86/Debug/TestMono.pdb
