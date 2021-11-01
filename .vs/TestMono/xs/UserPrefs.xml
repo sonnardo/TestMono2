@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{9E893759-F0E9-48C9-AF69-6572D951109A}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="TestMono/MainWindow.cs">
     <Files>
-      <File FileName="TestMono/Program.cs" Line="1" Column="1" />
-      <File FileName="TestMono/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="TestMono/MainWindow.cs" Line="20" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestMono" expanded="True">
             <Node name="TestMono" expanded="True">
-              <Node name="UserInterface" expanded="True">
-                <Node name="MainWindow" selected="True" />
-              </Node>
+              <Node name="UserInterface" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="MainWindow.cs" selected="True" />
             </Node>
           </Node>
         </State>

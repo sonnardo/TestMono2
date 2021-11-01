@@ -3,13 +3,13 @@
 
 public partial class MainWindow
 {
-	private global::Gtk.Frame frame1;
+	private global::Gtk.VBox vbox1;
 
-	private global::Gtk.Alignment GtkAlignment;
+	private global::Gtk.Label label1;
 
-	private global::Gtk.Button button3;
+	private global::Gtk.ColorButton colorbutton1;
 
-	private global::Gtk.Label GtkLabel1;
+	private global::Gtk.Button btnChange;
 
 	protected virtual void Build()
 	{
@@ -18,35 +18,51 @@ public partial class MainWindow
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+		this.BorderWidth = ((uint)(3));
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.frame1 = new global::Gtk.Frame();
-		this.frame1.Name = "frame1";
-		this.frame1.ShadowType = ((global::Gtk.ShadowType)(0));
-		// Container child frame1.Gtk.Container+ContainerChild
-		this.GtkAlignment = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
-		this.GtkAlignment.Name = "GtkAlignment";
-		this.GtkAlignment.LeftPadding = ((uint)(12));
-		// Container child GtkAlignment.Gtk.Container+ContainerChild
-		this.button3 = new global::Gtk.Button();
-		this.button3.CanFocus = true;
-		this.button3.Name = "button3";
-		this.button3.UseUnderline = true;
-		this.button3.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.GtkAlignment.Add(this.button3);
-		this.frame1.Add(this.GtkAlignment);
-		this.GtkLabel1 = new global::Gtk.Label();
-		this.GtkLabel1.Name = "GtkLabel1";
-		this.GtkLabel1.LabelProp = global::Mono.Unix.Catalog.GetString("<b>GtkFrame</b>");
-		this.GtkLabel1.UseMarkup = true;
-		this.frame1.LabelWidget = this.GtkLabel1;
-		this.Add(this.frame1);
+		this.vbox1 = new global::Gtk.VBox();
+		this.vbox1.Name = "vbox1";
+		this.vbox1.Spacing = 6;
+		// Container child vbox1.Gtk.Box+BoxChild
+		this.label1 = new global::Gtk.Label();
+		this.label1.Name = "label1";
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Di sini adalah Judul!");
+		this.label1.UseMarkup = true;
+		this.vbox1.Add(this.label1);
+		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.label1]));
+		w1.Position = 0;
+		w1.Expand = false;
+		w1.Fill = false;
+		// Container child vbox1.Gtk.Box+BoxChild
+		this.colorbutton1 = new global::Gtk.ColorButton();
+		this.colorbutton1.CanFocus = true;
+		this.colorbutton1.Events = ((global::Gdk.EventMask)(784));
+		this.colorbutton1.Name = "colorbutton1";
+		this.vbox1.Add(this.colorbutton1);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.colorbutton1]));
+		w2.Position = 1;
+		w2.Expand = false;
+		w2.Fill = false;
+		// Container child vbox1.Gtk.Box+BoxChild
+		this.btnChange = new global::Gtk.Button();
+		this.btnChange.CanFocus = true;
+		this.btnChange.Name = "btnChange";
+		this.btnChange.UseUnderline = true;
+		this.btnChange.Label = global::Mono.Unix.Catalog.GetString("Change!");
+		this.vbox1.Add(this.btnChange);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.btnChange]));
+		w3.Position = 2;
+		w3.Expand = false;
+		w3.Fill = false;
+		this.Add(this.vbox1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 255;
-		this.DefaultHeight = 120;
+		this.DefaultWidth = 240;
+		this.DefaultHeight = 103;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.btnChange.Clicked += new global::System.EventHandler(this.onClick);
 	}
 }

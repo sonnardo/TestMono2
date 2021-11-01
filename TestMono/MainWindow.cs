@@ -13,4 +13,11 @@ public partial class MainWindow : Gtk.Window
         Application.Quit();
         a.RetVal = true;
     }
+
+    protected void onClick(object sender, EventArgs e)
+    {
+        string hexColor;
+        hexColor = colorbutton1.Color.GetHashCode().ToString();
+        label1.Text = hexColor;
+    }
 }
